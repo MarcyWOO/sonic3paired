@@ -249,7 +249,7 @@ var Module = {
     },
     totalDependencies: 0,
     monitorRunDependencies: function(e) {
-        this.totalDependencies = Math.max(this.totalDependencies, e), Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "All downloads complete.")
+        this.totalDependencies = Math.max(this.totalDependencies, e), Module.setStatus(e ? "Preparing... (" + (this.totalDependencies - e) + "/" + this.totalDependencies + ")" : "When prompted, download this first then click select file https://marcywoo.github.io/sonic3paired/Sonic_Knuckles_wSonic3.bin")
 		if(!e){
 			if(FS.analyzePath("/sonic3air/config.json", true).exists === true){
 				//Done downloading or retrieving from IDBFS the game data
